@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>In with the New Codez, Out with the Old Codez</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,900|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main hidden>
+      <section id="a">
+        <img src="me.jpg" alt="Daniel Marino">
+        <h3>Daniel Marino</h3>
+        <a class="next" href="#b">Next</a>
+      </section>
+
+      <section id="b">
+        <h1>In with the New Codez, Out with the Old Codez</h1>
+        <p>Five ways you can replace JavaScript libraries in your codebase</p>
+        <a class="next" href="#c">Next</a>
+      </section>
+
+      <section id="c">
+        <h2>Fetch</h2>
+        <ul>
+          <li>A global method that provides an easy, logical way to fetch resources asynchronously across the network.</li>
+          <li>Uses Promises to handle results/callbacks.</li>
+          <li>This kind of functionality was previously achieved using <code>XMLHttpRequest</code> which was a bummer to use.</li>
+          <li>Works in all modern browsers. <a class="caniuse" href="https://caniuse.com/#feat=fetch" target="_blank" rel="noopener">caniuse.com</a></li>
+        </ul>
+        <p><a class="demo" href="https://codepen.io/starzonmyarmz/pen/qBBavBa?editors=1010" target="_blank" rel="noopener">Demo</a></p>
+        <a class="next" href="#d">Next</a>
+      </section>
+
+      <section id="d">
+        <h2>Intersection Observer API</h2>
+        <ul>
+          <li>Provides a way to observe changes in the intersection of a target element with another element.</li>
+          <li>Has a <code>threshold</code> option where you can indicate at what percentage of the target’s visibility the observer’s callback should be executed.</li>
+          <li>Works in all modern browsers. <a class="caniuse" href="https://caniuse.com/#feat=intersectionobserver" target="_blank" rel="noopener">caniuse.com</a></li>
+        </ul>
+        <p><a class="demo" href="https://codepen.io/starzonmyarmz/pen/xxxEgyP" target="_blank" rel="noopener">Demo</a></p>
+        <a class="next" href="#e">Next</a>
+      </section>
+
+      <section id="e">
+        <h2>URLSearchParams</h2>
+        <ul>
+          <li>Provides utility methods to work with the query string of a URL.</li>
+          <li>Manipulating and Retrieving Query Params is no longer a pain!</li>
+          <li>Works in all modern browsers. <a class="caniuse" href="https://caniuse.com/#feat=urlsearchparams" target="_blank" rel="noopener">caniuse.com</a></li>
+        </ul>
+        <a class="demo" href="/urlsearchparams.html?product=tee+shirt&color=blue&size=large" target="_blank" rel="noopener">Demo</a>
+        <a class="next" href="#f">Next</a>
+      </section>
+
+      <section id="f">
+        <h2>Loading Attribute</h2>
+        <ul>
+          <li>Images aren’t loaded until a “user scrolls near” them.</li>
+          <li>Works with the following elements: <code>img</code>, <code>picture</code>, and <code>iframe</code>.
+          <li>A simple html attribute that accepts three values: <code>lazy</code>, <code>eager</code>, and <code>auto</code>.
+          <li>Currently only works in Chrome… <a class="caniuse" href="https://caniuse.com/#feat=loading-lazy-attr" target="_blank" rel="noopener">caniuse.com</a></li>
+        </ul>
+        <p><a class="demo" href="https://www.getharvest.fragrant-sun.harveststaging.com/" target="_blank" rel="noopener">Demo</a></p>
+        <a class="next" href="#g">Next</a>
+      </section>
+
+      <section id="g">
+        <h2>getharvest.com</h2>
+        <table>
+          <tr>
+            <th></th>
+            <th>Requests</th>
+            <th>Data Transfer</th>
+            <th>Load Time</th>
+          </tr>
+          <tr>
+            <td><em>Without</em> Lazy Loading</td>
+            <td>34</td>
+            <td>574 KB</td>
+            <td>1.63 s</td>
+          </tr>
+          <tr>
+            <td><em>With</em> Lazy Loading</td>
+            <td>27</td>
+            <td>445 KB</td>
+            <td>1.18 s</td>
+          </tr>
+          <tr>
+            <td>Savings</td>
+            <td>14</td>
+            <td>129 KB</td>
+            <td>0.45 s</td>
+          </tr>
+        </table>
+        <a class="next" href="#h">Next</a>
+      </section>
+
+      <section id="h">
+        <h2>Document.designMode</h2>
+        <ul>
+          <li>Controls whether the entire document is editable. <br> Why would you need this? <em>/shrugs</em></li>
+          <li>Takes one of two values: “on” or “off” .</li>
+          <li>You can even use <kbd>Cmd</kbd> + <kbd>B</kbd> to <strong>bold</strong> text and <kbd>Cmd</kbd> + <kbd>I</kbd> to <em>italicize</em> text.</li>
+          <li>Works in all modern browsers… and IE11. <a class="caniuse" href="https://caniuse.com/#feat=mdn-api_document_designmode" target="_blank" rel="noopener">caniuse.com</a></li>
+        </ul>
+        <p><a class="demo" href="http://getharvest.com" target="_blank" rel="noopener">Demo</a></p>
+        <a class="next" href="#h">Next</a>
+      </section>
+
+      <section id="i">
+        <h1>Thanks</h1>
+      </section>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

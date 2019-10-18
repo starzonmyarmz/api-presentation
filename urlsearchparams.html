@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>URLSearchParams Demo</title>
+
+    <style>
+      body { color: #222; font-family: helvetica; font-size: 2rem; line-height: 1.35; margin: 2rem; }
+      section { margin-bottom: 4rem; }
+      pre { background: #eee; border: 4px solid lightgray; color: orangered; margin: 0; overflow: scroll; padding: 2rem; }
+      .output { border: 4px solid lightgray; border-bottom: 0; overflow: scroll; padding: 2rem; }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <h2>Query Params</h2>
+      <div id="url" class="output"></div>
+<pre>
+const params = new URLSearchParams(window.location.search)
+</pre>
+    </section>
+
+    <section>
+      <h2>has()</h2>
+<pre>
+params.has('product') // true
+</pre>
+    </section>
+
+    <section>
+      <h2>get()</h2>
+<pre>
+params.get('product') // 'tee shirt'
+</pre>
+    </section>
+
+    <section>
+      <h2>append()</h2>
+<pre>
+params.append('qty', '5')
+params.toString() // product=tee+shirt&color=blue&size=large&qty=5
+</pre>
+    </section>
+
+    <section>
+      <h2>set()</h2>
+<pre>
+params.set('qty', '2')
+params.toString() // product=tee+shirt&color=blue&size=large&qty=2
+</pre>
+    </section>
+
+    <section>
+      <h2>delete()</h2>
+<pre>
+params.delete('qty')
+params.toString() // product=tee+shirt&color=blue&size=large
+</pre>
+    </section>
+  </body>
+
+  <script>
+    const params = new URLSearchParams(window.location.search)
+
+    document.getElementById('url').innerHTML = params
+
+
+  </script>
+</html>

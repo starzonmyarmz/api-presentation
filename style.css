@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
+  line-height: 1.4;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+section {
+  flex: 0 0 auto;
+  height: 100vh;
+  padding: 2rem 16rem 2rem 4rem;
+  position: relative;
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 7rem;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+code {
+  color: tomato;
+  font-family: 'Source Code Pro', monospace;
+}
+
+img {
+  max-height: calc(100vh - 4rem);
+  max-width: calc(100vh - 6rem);
+}
+
+kbd {
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 0 #eee;
+  display: inline-block;
+  padding: 0 0.75rem;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+strong {
+  font-weight: 800;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+table {
+  border: 1px solid lightgray;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  text-align: right;
+}
+
+a:hover, a:visited {
+  color: blue;
+}
+
+.caniuse {
+  font-size: 75%;
+  font-style: italic;
+}
+
+.demo {
+  border: 2px solid blue;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+
+.next {
+  bottom: 50px;
+  position: absolute;
+  right: 50px;
+  text-decoration: none;
+  z-index: 1000;
+}
